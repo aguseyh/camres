@@ -1,0 +1,58 @@
+@startuml
+Proveedor <|- Factura
+Factura <|- TipoFactura
+Pago <|- Factura
+Proveedor <|- Pago
+Proveedor <|- Usuario
+Balance <|- Usuario
+Usuario <|- Pago
+
+class Proveedor {
+  Integer idProveedor
+  Long rut
+  String Nombre
+}
+
+class Factura {
+  Integer idFactura
+  Long nroFactura
+  Integer importe
+  Integer kilos
+  Date fecha
+  Date FechaIngresada
+  TipoFactura tipoFactura
+  Integer IdProveedor
+  Integer IdUsuario
+}
+
+class Pago {
+  Provedore idProvedor
+  List<Factura> listFacturas
+  Integer importeTotal
+  Date fechaInicio
+  Date fechaFin
+}
+
+class Balance {
+  Integer importe
+  Integer kilos
+  Integer importeDevoluciones
+  Integer kilosDevoluciones 
+  Integer ImporteSuper
+  Date fecha 
+  Integer IdUsuario
+}
+
+class Usuario {
+  Integer Id
+  String Usuario
+  Strign Contraseña
+  String mail
+  List<Proveedores> listaProveedores
+}
+
+enum TipoFactura {
+  Credito
+  Debito
+}
+@enduml
