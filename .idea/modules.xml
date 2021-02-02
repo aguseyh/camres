@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/business/business.iml" filepath="$PROJECT_DIR$/business/business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camres.iml" filepath="$PROJECT_DIR$/camres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontend/control-service/control-service.iml" filepath="$PROJECT_DIR$/frontend/control-service/control-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontend/frontend.iml" filepath="$PROJECT_DIR$/frontend/frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontend/control-service/react-src.iml" filepath="$PROJECT_DIR$/frontend/control-service/react-src.iml" />
+    </modules>
+  </component>
+</project>
